@@ -18,8 +18,20 @@
 </head>
 
 <body>
-  
+  <h1> Hello World!</h1>
 </body>
   
-  
+<footer>
+<script src="/echo.js"></script>
+<script>
+echo.init({
+ offset: 100,
+ throttle: 250,
+ unload: false,
+ callback: function (element, op) {
+   console.log(element, 'has been', op + 'ed')
+ }
+});
+</script>
+</footer>  
 </html>
